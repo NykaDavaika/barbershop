@@ -18,80 +18,51 @@ body {
     background: #000000 url("../img/barbershop-index-grid.jpg") no-repeat center top;
 }
     
-.sprite {
-    background-image: url(../img/sprite.png);
-    background-repeat: no-repeat;
-    display: block;
-}
 
-.sprite-ico-checkbox-active {
-    width: 12px;
-    height: 12px;
-    background-position: -10px -10px;
-}
-
-.sprite-ico-fb {
-    width: 12px;
-    height: 22px;
-    background-position: -10px -42px;
-}
-
-.sprite-ico-inst {
-    width: 21px;
-    height: 21px;
-    background-position: -10px -84px;
-}
-
-.sprite-ico-login {
-    width: 18px;
-    height: 16px;
-    background-position: -10px -125px;
-}
-
-.sprite-ico-vk {
-    width: 25px;
-    height: 16px;
-    background-position: -10px -161px;
-}
-
-.social-btn{
+.social-btn {
     display: inline-block;
-    vertical-align: top;
     width: 43px;
     height: 43px;
     margin: 0 2px;
     
     font-size: 0;
-    background-color: #000000;
-    position:relative;
-}
-
-.social-btn::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url(../img/sprite.png);
-    background-repeat: no-repeat;
-}
-
-.social-btn-vk::before{
-    width: 25px;
-    height: 16px;
-    background-position: -10px -161px;
-}
-.social-btn-fb::before{
-    width: 12px;
-    height: 22px;
-    background-position: -10px -42px;
-}
+    vertical-align: top;
+    text-decoration: none;
     
-.social-btn-inst::before{
-    width: 21px;
-    height: 21px;
-    background-position: -10px -84px;
+    background: #000000 url("../img/sprites-arbass.png") no-repeat center;
+    
+    transition: 
+        background-position 0.5s,
+        background-color 0.5s;
 }
+
+.social-btn-vk{
+    background-position: 8px -825px;
+}
+
+.social-btn-fb{
+    background-position: 15px -548px;
+}
+
+.social-btn-inst{
+    background-position: 11px -691px;
+}
+.social-btn-vk:hover{
+    background: #ffffff url("../img/sprites-arbass.png") no-repeat center;
+    background-position: 8px -759px;
+}
+
+.social-btn-fb:hover{
+    background: #ffffff url("../img/sprites-arbass.png") no-repeat center;
+    background-position: 15px -476px;
+}
+
+.social-btn-inst:hover{
+    background: #ffffff url("../img/sprites-arbass.png") no-repeat center;
+    background-position: 11px -619px;
+}
+
+/*кончился*/
 
     
 .clearfix::after {
@@ -440,22 +411,6 @@ body {
     margin-bottom: 15px; 
 }
 
-.social-btn{
-    display: inline-block;
-    width: 43px;
-    height: 43px;
-    margin: 0 2px;
-    
-    font-size: 0;
-    vertical-align: top;
-    text-decoration: none;
-    
-    background: #000000 url("../img/sprite.png") no-repeat center;
-    
-    transition: 
-        background-position 0.5s,
-        background-color 0.5s;
-}
 
 .footer-copyright p{
     margin: 0;
