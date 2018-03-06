@@ -135,9 +135,30 @@
                 <span class="checkbox-indicator"></span>Запомните меня     
             </label>
             <a class="restore" href="#">Я забыл пароль!</a>
-            <button class="btn" type="submit">Войти</button>
+            <button class="btn" type="submit">Войти</button>    
             </form>
-        </div>    
+        </div>  
+        <div class="modal-content-map">
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <div id="yandex-map"></div>
+        </div>
+        <div class="modal-overlay"></div>
+        
+        <script>
+            var link = document.querySelector(".login");
+            var popup = document.querySelector(".modal-content");
+            var close = document.querySelector(".modal-content-close");
+            
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.add("modal-content-show");
+            });    
+            
+            close.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.remove("modal-content-show");
+            })
+        </script>
     </body>
 </html>
 
