@@ -1,4 +1,4 @@
-            var mapOpen = document.querySelector("js-open-map");
+            var mapOpen = document.querySelector(".js-open-map");
             var mapPopup = document.querySelector(".modal-content-map");
             var mapClose = mapPopup.querySelector(".modal-content-close"); 
 
