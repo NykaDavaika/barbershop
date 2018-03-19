@@ -1,6 +1,6 @@
 html, body {
     min-width: 1122px;
-    min-height: 1750px;
+/*    min-height: 1750px;*/
     margin: 0;
     padding: 0;
 }
@@ -24,7 +24,7 @@ body {
     background: #f8f3f0 url("../img/pattern-white.jpg") repeat;
 }
 
-/*начался*/
+/*начался спрайт*/
 
 .social-btn {
     display: inline-block;
@@ -916,8 +916,8 @@ modal-overlay -
 }
 
 
-
-
+.inner-columns clearfix h2{
+}
 
 
 
